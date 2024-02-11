@@ -36,6 +36,10 @@ squares.forEach(sq => {
 
 dBtn.addEventListener("click", () => {
 
+    squares.forEach(sq => {
+        sq.remove()
+    })
+
     if (dWidth.value <= 30 && dHeight.value <=30) {
 
     
@@ -50,9 +54,7 @@ dBtn.addEventListener("click", () => {
     etch.style.width = wxh + "px"
     etch.style.height = wxh + "px"
 
-    squares.forEach(sq => {
-        sq.remove()
-    })
+
 
     for (let i = 0; i < parseInt(wxh); i++) {
         let n = document.createElement("div")
@@ -87,8 +89,10 @@ const openDimensionsPopUp = () => {
     shade.style.display = "block";
     changeDimensions.style.display = "block"
 
-
-
+    let newSq = document.querySelectorAll(".sq")
+    newSq.forEach(sq => {
+        sq.remove()
+    })
 
     pBtn.style.visibility = "hidden"
 }
