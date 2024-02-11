@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>etch-sketch</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- <div id="overall"> -->
+        <button id="p-btn" onClick="openDimensionsPopUp()">Change dimensions</button>
+        <main>
+            <h1>etch-sketch</h1>
+            <!-- POPUP  -->
+            <div class="shade"></div>
+
+            <div id="change-dimensions">
+                <h1>Personalize your etch-sketch</h1>
+                <p>Choose your own dimensions</p>
+                <p id="limit">Limit: 30</p>
+                <div>
+                    <div id="w-h">
+                        <p>Width:</p>
+                        <p>Height:</p>
+                    </div>
+                    <div id="nums-select">
+                        <input type="number" min="0" max="30" name="d-width" id="d-width" placeholder="0">
+                        <input type="number" min="0" max="30" name="d-height" id="d-height" placeholder="0">
+                    </div>
+                    <p id="limit-reached">Error: the limit is 30</p>
+                    <div id="d-btn-container">
+                        <button id="d-btn">Submit</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="container">
+                <!-- etch goes here  -->
+                
+            </div>
+            <div id="me"><p>by Claudia</p></div>
+        </main>
+    
+    <!-- </div> -->
+
+    <script src="./scripts.js"></script>
+</body>
+</html>

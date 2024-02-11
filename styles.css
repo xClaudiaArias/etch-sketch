@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    height:100%;
+}
+
+body {
+    background: tomato;
+    /* padding: 50px; */
+}
+
+#me {
+    display: block;
+}
+
+h1{
+    color: lemonchiffon;
+    text-align: center;
+    margin-top: 80px;
+    padding-top: 40px;
+}
+
+p {
+    text-align: center;
+    color: rgb(255, 183, 170);
+}
+
+#container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.shade {
+    width: inherit;
+    height: inherit;
+    height: 100vh;
+    display: block;
+    background: black;
+    position: absolute;
+    opacity: 0.5;
+    display: none;
+}
+
+#change-dimensions {
+    width: 500px;
+    height: 420px;
+    border: 40px double tomato;
+    background: lemonchiffon;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    position: absolute;
+    display: none;
+    padding: 20px;
+}
+
+#change-dimensions h1{
+    color: tomato;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+#change-dimensions p{
+    color:  tomato;
+    font-size: 20px;
+    background: white;
+}
+
+
+#change-dimensions #limit {
+    color:  rgb(255, 166, 151);
+    font-size: 14px;
+    /* padding-bottom: 40px; */
+}
+
+#w-h,
+#nums-select {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 100px;
+}
+
+#w-h {
+    padding-top: 30px;
+}
+
+#w-h p {
+    font-weight: 600;
+    background: lemonchiffon;
+}
+
+#d-width,
+#d-height {
+    display: block;
+    margin: 10px;
+}
+
+#nums-select input[type=number] {
+    width: 50px;
+    height: 30px;
+    padding-left: 5px;
+    font-size: 18px;
+    color: tomato;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+}
+
+#nums-select input[type=number]::placeholder {
+    color: rgb(255, 205, 196);
+}
+
+#d-btn-container {
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+#d-btn-container button{
+    margin-left: 180px;
+    width: 100px;
+    height: 40px;
+    color: lemonchiffon;
+    background: tomato;
+    font-size: 16px;
+    border: 1px solid tomato;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#d-btn-container button:hover{
+    background: rgb(255, 75, 43);
+}
+
+#change-dimensions #limit-reached {
+    background-color: lemonchiffon;
+    font-weight: 800;
+    color: red;
+    padding-top: 10px;
+    visibility: hidden;
+}
+
+#p-btn {
+    height: 40px;
+    border: none;
+    background: lemonchiffon;
+    color: tomato;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 2px rgb(255, 66, 33);
+    justify-self: flex-start;
+    position: absolute;
+    z-index: 4;
+}
+
+#p-btn:hover {
+    background: rgb(255, 245, 152);
+    color: tomato;
+}
