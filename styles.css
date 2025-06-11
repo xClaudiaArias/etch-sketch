@@ -129,24 +129,39 @@ main {
 }
 
 #d-btn-container {
-    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
     margin-top: 20px;
 }
 
-#d-btn-container button{
-    margin-left: 180px;
+#d-btn-container #d-btn,
+#d-btn-container #c-btn {
     width: 100px;
     height: 40px;
-    color: lemonchiffon;
-    background: tomato;
     font-size: 16px;
-    border: 1px solid tomato;
     border-radius: 8px;
     cursor: pointer;
 }
 
-#d-btn-container button:hover{
+#d-btn-container #d-btn{
+    color: lemonchiffon;
+    background: tomato;
+    border: none;
+}
+
+#d-btn-container #c-btn{
+    background-color: lemonchiffon;
+    color: tomato;
+    border: 1px solid tomato;
+}
+
+#d-btn-container #d-btn:hover{
     background: rgb(255, 75, 43);
+}
+
+#d-btn-container #c-btn:hover{
+    background: rgb(255, 246, 167);
 }
 
 #change-dimensions #limit-reached {

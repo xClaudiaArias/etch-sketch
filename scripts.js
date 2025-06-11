@@ -4,6 +4,8 @@ let dHeight = document.getElementById("d-height");
 let dBtn = document.getElementById("d-btn");
 let pBtn = document.getElementById("p-btn");
 let limit = document.getElementById("limit-reached");
+let cBtn = document.getElementById("c-btn");
+
 let width = 16
 let height = 16
 let wxh = width * height
@@ -89,12 +91,12 @@ const openDimensionsPopUp = () => {
     shade.style.display = "block";
     changeDimensions.style.display = "block"
 
-    let newSq = document.querySelectorAll(".sq")
-    newSq.forEach(sq => {
-        sq.remove()
-    })
+    // let newSq = document.querySelectorAll(".sq")
+    // newSq.forEach(sq => {
+    //     sq.remove()
+    // })
 
-    pBtn.style.visibility = "hidden"
+    // pBtn.style.visibility = "hidden"
 }
 
 
@@ -108,3 +110,10 @@ const closeModal = () => {
     shade.style.display = "none"
     changeDimensions.style.display = "none"
 }
+
+cBtn.addEventListener('click', () => {
+    console.log("i was clicked")
+    squares.forEach(sq => {
+        sq.style.backgroundColor = 'tomato'
+    })
+})

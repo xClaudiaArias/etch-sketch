@@ -8,7 +8,7 @@
 </head>
 <body>
     <!-- <div id="overall"> -->
-        <button id="p-btn" onClick="openDimensionsPopUp()">Change dimensions</button>
+        <button id="p-btn" onClick="openDimensionsPopUp()">Settings</button>
         <main>
             <h1>etch-sketch</h1>
             <!-- POPUP  -->
@@ -24,12 +24,13 @@
                         <p>Height:</p>
                     </div>
                     <div id="nums-select">
-                        <input type="number" min="0" max="30" name="d-width" id="d-width" placeholder="0">
-                        <input type="number" min="0" max="30" name="d-height" id="d-height" placeholder="0">
+                        <input type="number" min="0" max="30" name="d-width" id="d-width" placeholder="0" value="10">
+                        <input type="number" min="0" max="30" name="d-height" id="d-height" placeholder="0" value="10">
                     </div>
                     <p id="limit-reached">Error: the limit is 30</p>
                     <div id="d-btn-container">
                         <button id="d-btn">Submit</button>
+                        <button id="c-btn">Clear</button>
                     </div>
                 </div>
             </div>
